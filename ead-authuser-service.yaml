@@ -7,7 +7,7 @@ spring:
   application:
     name: ead-authuser-service
   datasource:
-    url:  jdbc:postgresql://localhost:5432/ead-authuser1
+    url: jdbc:postgresql://localhost:5432/ead-authuser1
     username: postgres
     password: admin
   jpa:
@@ -44,6 +44,19 @@ ead:
     queue:
       userEventQueue:
         name: ead.userevent.ms.course
+
+
+authuser:
+  refreshscope:
+    name: Rafaela Monteiro
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
 
 resilience4j:
   circuitbreaker:
