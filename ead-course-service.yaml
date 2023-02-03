@@ -45,3 +45,16 @@ ead:
       userEventQueue:
         name: ead.userevent.ms.course
 
+
+client:
+  refreshscope:
+    name: Rafaela Monteiro
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
+
