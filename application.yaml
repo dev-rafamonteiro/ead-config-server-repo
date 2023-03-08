@@ -1,17 +1,13 @@
+ead:
+  serviceRegistry:
+    username: serviceregistry
+    password: 'ead123sr'
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: 'http://localhost:8761/eureka'
+      defaultZone: 'http://${ead.serviceRegistry.username}:${ead.serviceRegistry.password}@localhost:8731/eureka'
   instance:
     hostname: localhost
     
     
-
-logging:
-  level:
-    com:
-      netflix:
-        eureka: OFF
-        discovery: OFF
-
-
