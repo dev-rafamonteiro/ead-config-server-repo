@@ -2,6 +2,11 @@ ead:
   serviceRegistry:
     username: serviceregistry
     password: 'ead123sr'
+  auth:
+    jwtSecret: dSgVkYp3s6v9y$B&E)H@McQeThWmZq4t7w!z%C*F-JaNdRgUjXn2r5u8x/A?D(G+
+    jwtExpirationMs: 14400000
+
+
 
 eureka:
   client:
